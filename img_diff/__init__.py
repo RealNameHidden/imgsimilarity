@@ -8,7 +8,7 @@ from PIL import Image
 def diff(h1, h2):
     return dhash.get_num_bits_different(h1, h2)
 
-
+ 
 def processImage(csvfile):
     results = []
     start_time = 0
