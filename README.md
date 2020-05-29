@@ -1,1 +1,1 @@
-# img-diff
+# imgdiff
