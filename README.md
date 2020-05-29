@@ -25,3 +25,29 @@ The module imgdiff takes a command line argument, i.e the path to the location o
 
 ``  python -m imgdiff.diff C://path to csv file ``
 >The tool will execute and a comparison_results.csv file will be generated in the directory the command was run.
+
+## How does the tool work?
+
+The tool uses dhash algorithm to find a hashcode for each image and then find how many bits differ between the hashcodes to find the score for similarity. Identical images have 
+difference as 0.
+
+The dhash pypi module is being used here, its an out of the box python module to compute hashes and determine the difference for images.
+The hash for an image is stored in a dictionary to avoid repeated execution of dhash function and this reduces the cost of similarity detection.
+The execution time for each pair is calculated by taking the difference of process time at the start of the iteration and the process time at the end of the iteration.
+
+Below is a flowchart that briefly illustrates how the tool functions.
+
+
+![alt text](https://inse-6250-40082192.s3.amazonaws.com/imgdiff+flow+chart.jpg)
+
+
+## How does the tool achieve hassle free installation and usage?
+
+It is by using the Python Package Index repository!
+
+Once the latest code is pushed and tagged, the gitlab ci is configured to run pytests to make sure the code works and the once the tests succeed it creates the build and a distributable with the help of setup.py file and twindle.
+and its uploaded to the PyPi Repository automatically.
+
+The user can install the latest version using pip install or upgrade command. Thanks to the setup.py file all the dependencies are installed automatically 
+
+![alt text](https://inse-6250-40082192.s3.amazonaws.com/pipeline_flowchart.jpg)
