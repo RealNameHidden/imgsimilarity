@@ -1,7 +1,7 @@
 import csv
 import dhash
 from PIL import Image
-from imgdiff import diff
+from imgsimilarity import diff
 dictHash = dict()
 results = [
     ['tests/resources/img1.gif', 'tests/resources/img2.jpg', 0.0, 0.125],

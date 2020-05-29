@@ -7,7 +7,7 @@ import dhash
 from PIL import Image
 
 """
-imgdiff main module
+imgsimilarity main module
 This is Module reads the csv file and process the images and determines similarity score. Finally a cv file is generated.
 """
 

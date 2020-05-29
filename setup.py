@@ -17,7 +17,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
  
-    name='imgdiff',  # Required
+    name='imgsimilarity',  # Required
 
     # Versions should comply with PEP 440:
     # https://www.python.org/dev/peps/pep-0440/
@@ -25,7 +25,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='2.0.0',  # Required
+    version='0.1',  # Required
 
     description='A tool to compare similar images',  # Optional
     long_description=long_description,  # Optional
@@ -46,10 +46,10 @@ setup(
     ],
 
     keywords='image similarity dhash',  # Optional
-    py_modules=["imgdiff/diff"],
-    # package_dir={'': 'imgdiff'},
+    py_modules=["imgsimilarity/diff"],
+    # package_dir={'': 'imgsimilarity'},
     # package_dir={'mytest': 'src/mytest'},
-    # packages=['imgdiff'],
+    # packages=['imgsimilarity'],
     # Required
     python_requires='>=3.0, <4',
 
