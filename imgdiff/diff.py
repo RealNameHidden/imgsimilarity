@@ -5,7 +5,9 @@ import dhash
 import os
 from PIL import Image
 
-
+"""
+This is pydoc
+"""
 def diff(h1, h2):
     return dhash.get_num_bits_different(h1, h2)
 
