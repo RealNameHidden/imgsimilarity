@@ -2,7 +2,7 @@
 
 
 # imgsimilarity
-![Python package](https://github.com/RealNameHidden/imgsimilarity/workflows/Python%20package/badge.svg)
+![Python package](https://github.com/RealNameHidden/imgsimilarity/workflows/Python%20package/badge.svg) ![Upload Python Package](https://github.com/RealNameHidden/imgsimilarity/workflows/Upload%20Python%20Package/badge.svg)
 
 imgsimilarity tool automates the process of comparing image pairs to check if they are similar or not and produces a score that quantifies the comparison by providing a score between 0 to 1, 0 being exactly identical. 
 
