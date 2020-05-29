@@ -2,6 +2,7 @@
 
 
 # imgsimilarity
+![Python package](https://github.com/RealNameHidden/imgsimilarity/workflows/Python%20package/badge.svg)
 
 imgsimilarity tool automates the process of comparing image pairs to check if they are similar or not and produces a score that quantifies the comparison by providing a score between 0 to 1, 0 being exactly identical. 
 
@@ -23,7 +24,7 @@ Open a terminal and paste:
 ### Execution
 The module imgsimilarity takes a command line argument, i.e the path to the location of the csv file which needs to be provided when running it like in the example below
 
-``  python -m imgsimilarity.diff C://path to csv file ``
+``  python -m imgsimilarity.diff C://pathtocsvfile ``
 >The tool will execute and a comparison_results.csv file will be generated in the directory the command was run.
 
 ## How does the tool work?
@@ -51,3 +52,11 @@ and its uploaded to the PyPi Repository automatically.
 The user can install the latest version using pip install or upgrade command. Thanks to the setup.py file all the dependencies are installed automatically 
 
 ![alt text](https://inse-6250-40082192.s3.amazonaws.com/pipeline_flowchart.jpg)
+
+#### Reference:
+>PyPi repo: https://pypi.org/project/imgsimilarity/
+>dhash : https://pypi.org/project/dhash/
+
+
+>#### note
+>The source code is well documented and pydoc can be genrated.
