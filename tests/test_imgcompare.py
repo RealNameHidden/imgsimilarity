@@ -4,12 +4,12 @@ from PIL import Image
 import img_diff
 dictHash = dict()
 results = [
-    ['C:\\Users\\14387\\Desktop\\Sample\\img1.gif', 'C:\\Users\\14387\\Desktop\\Sample\\img2.jpg', 0.0, 0.125],
-    ['C:\\Users\\14387\\Desktop\\Sample\\img1.gif', 'C:\\Users\\14387\\Desktop\\Sample\\img3.jpg', 0.19, 0.078],
-    ['C:\\Users\\14387\\Desktop\\Sample\\img2.jpg', 'C:\\Users\\14387\\Desktop\\Sample\\img3.jpg', 0.19, 0.0],
-    ['C:\\Users\\14387\\Desktop\\Sample\\img1.gif', 'C:\\Users\\14387\\Desktop\\Sample\\img5.jpg', 0.53, 0.0],
-    ['C:\\Users\\14387\\Desktop\\Sample\\img2.jpg', 'C:\\Users\\14387\\Desktop\\Sample\\img5.jpg', 0.53, 0.0],
-    ['C:\\Users\\14387\\Desktop\\Sample\\img4.jpg', 'C:\\Users\\14387\\Desktop\\Sample\\img1.gif', 0.34, 0.031]]
+    ['tests/resources/img1.gif', 'tests/resources/img2.jpg', 0.0, 0.125],
+    ['tests/resources/img1.gif', 'tests/resources/img3.jpg', 0.19, 0.078],
+    ['tests/resources/img2.jpg', 'tests/resources/img3.jpg', 0.19, 0.0],
+    ['tests/resources/img1.gif', 'tests/resources/img5.jpg', 0.53, 0.0],
+    ['tests/resources/img2.jpg', 'tests/resources/img5.jpg', 0.53, 0.0],
+    ['tests/resources/img4.jpg', 'tests/resources/img1.gif', 0.34, 0.031]]
 csvfile = None
 row1 = None
 row2 = None
