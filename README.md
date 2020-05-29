@@ -53,6 +53,7 @@ The user can install the latest version using pip install or upgrade command. Th
 
 ![alt text](https://inse-6250-40082192.s3.amazonaws.com/pipeline_flowchart.jpg)
 
+
 #### Reference:
 >PyPi repo: https://pypi.org/project/imgsimilarity/
 >dhash : https://pypi.org/project/dhash/
