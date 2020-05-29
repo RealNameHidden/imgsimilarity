@@ -1,7 +1,7 @@
 import csv
 import dhash
 from PIL import Image
-import img_diff
+from imgdiff import diff
 dictHash = dict()
 results = [
     ['tests/resources/img1.gif', 'tests/resources/img2.jpg', 0.0, 0.125],
@@ -28,15 +28,15 @@ def setup_module(module):
 
 
 def test_computeScore():
-    assert 0.0 == img_diff.computeScore(dictHash, row1)
-    assert 0.19 == img_diff.computeScore(dictHash, row2)
+    assert 0.0 == diff.computeScore(dictHash, row1)
+    assert 0.19 == diff.computeScore(dictHash, row2)
 
 
 def test_diff():
     h1 = dhash.dhash_int(Image.open(row1[0]))
     h2 = dhash.dhash_int(Image.open(row1[1]))
-    print(0, img_diff.diff(h1, h2))
+    print(0, diff.diff(h1, h2))
 
 
 def test_computeScore():
-    assert results.__eq__(img_diff.computeScore(dictHash, row1))
+    assert results.__eq__(diff.computeScore(dictHash, row1))

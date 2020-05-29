@@ -17,7 +17,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
  
-    name='img-diff',  # Required
+    name='imgdiff',  # Required
 
     # Versions should comply with PEP 440:
     # https://www.python.org/dev/peps/pep-0440/
@@ -25,7 +25,7 @@ setup(
     # For a discussion on single-sourcing the version across setup.py and the
     # project code, see
     # https://packaging.python.org/en/latest/single_source_version.html
-    version='1.0',  # Required
+    version='2.0.0',  # Required
 
     description='A tool to compare similar images',  # Optional
     long_description=long_description,  # Optional
@@ -46,7 +46,11 @@ setup(
     ],
 
     keywords='image similarity dhash',  # Optional
-    packages=find_packages(where='img_diff'),  # Required
+    py_modules=["imgdiff/diff"],
+    # package_dir={'': 'imgdiff'},
+    # package_dir={'mytest': 'src/mytest'},
+    # packages=['imgdiff'],
+    # Required
     python_requires='>=3.0, <4',
 
     # This field lists other packages that your project depends on to run.
@@ -55,7 +59,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['csv','dhash','time','PIL'],  # Optional
+    install_requires=['dhash','Pillow'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
