@@ -26,6 +26,12 @@ The module imgsimilarity takes a command line argument, i.e the path to the loca
 
 ``  python -m imgsimilarity.diff C://pathtocsvfile ``
 >The tool will execute and a comparison_results.csv file will be generated in the directory the command was run.
+>
+>The input csv file is expected to have the data in the format of (img1,img2).
+>
+>If executing in a linux or mac os env, ensure the file path is enclosed with quotes "/path/to/csv/file" or "//path//to//csv//file"
+>
+>Hint: to test the tool you can download the sample file and images in the folder imgsimilarity/tests/resources/ in this repo. (You will have to edit the data inthe csv file based on the path of the folder on your local)
 
 ## How does the tool work?
 
